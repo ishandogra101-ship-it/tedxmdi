@@ -6,7 +6,7 @@
 <title>TEDx7.0 · TEDxMDIGurgaon</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --ink:#0b0b0c;
@@ -19,7 +19,7 @@
     --white:#ffffff;
     --disp:'Anton', sans-serif;
     --body:'Archivo', sans-serif;
-    --mono:'Space Mono', monospace;
+    --label:'Archivo', sans-serif;
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
@@ -28,7 +28,7 @@
   a{color:inherit;text-decoration:none}
   img{display:block;max-width:100%}
   .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
-  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gray)}
+  .eyebrow{font-family:var(--label);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gray)}
   .eyebrow b{color:var(--red);font-weight:700}
   h1,h2,h3{font-family:var(--disp);font-weight:400;letter-spacing:.01em}
   :focus-visible{outline:2px solid var(--red);outline-offset:3px}
@@ -76,13 +76,13 @@
   .clip-poster:hover .play-ring{transform:scale(1.08);background:var(--red)}
   .play-ring{width:72px;height:72px;border-radius:50%;background:var(--red-deep);display:flex;align-items:center;justify-content:center;transition:transform .2s ease, background .2s ease}
   .play-ring svg{margin-left:4px}
-  .clip-chip{position:absolute;top:10px;left:10px;font-family:var(--mono);font-size:11px;background:rgba(11,11,12,.85);border:1px solid var(--line);padding:5px 9px;border-radius:2px;color:var(--white)}
+  .clip-chip{position:absolute;top:10px;left:10px;font-family:var(--label);font-size:11px;background:rgba(11,11,12,.85);border:1px solid var(--line);padding:5px 9px;border-radius:2px;color:var(--white)}
   .clip-chip i{color:var(--red);font-style:normal}
   .clip-meta{padding:16px 6px 6px}
   .clip-meta .speaker{font-weight:700;font-size:16px}
-  .clip-meta .from{font-family:var(--mono);font-size:11.5px;color:var(--gray);margin-top:2px}
+  .clip-meta .from{font-family:var(--label);font-size:11.5px;color:var(--gray);margin-top:2px}
   .clip-quote{margin-top:14px;padding:14px 16px;border-left:3px solid var(--red);background:#101012;font-size:15px;color:#e8e8e6;font-style:italic}
-  .clip-quote small{display:block;margin-top:8px;font-family:var(--mono);font-size:10.5px;color:var(--gray);font-style:normal}
+  .clip-quote small{display:block;margin-top:8px;font-family:var(--label);font-size:10.5px;color:var(--gray);font-style:normal}
   @media(max-width:880px){
     .hero{padding-top:120px}
     .hero-grid{grid-template-columns:1fr;gap:44px}
@@ -106,7 +106,7 @@
   .lens::after{content:"";position:absolute;inset:-1px;border-radius:50%;backdrop-filter:blur(0px)}
   .lens-stage:hover .lens{display:block}
   .lens-stage.revealed .lens{display:none}
-  .theme-hint{margin-top:22px;font-family:var(--mono);font-size:12px;color:var(--gray);letter-spacing:.1em}
+  .theme-hint{margin-top:22px;font-family:var(--label);font-size:12px;color:var(--gray);letter-spacing:.1em}
   .theme-line{max-width:52ch;margin:26px auto 0;color:var(--gray);font-size:16.5px}
   .theme-line em{color:var(--white);font-style:normal;font-weight:600}
   .lens-window{position:absolute;inset:0;filter:blur(0);clip-path:circle(0px at 50% 50%);color:var(--red);pointer-events:none}
@@ -122,7 +122,7 @@
   .spk-card:hover{transform:translateY(-6px);border-color:#3a3a40}
   .spk-card:nth-child(2),.spk-card:nth-child(5){transform:translateY(22px)}
   .spk-card:nth-child(2):hover,.spk-card:nth-child(5):hover{transform:translateY(16px)}
-  .spk-num{font-family:var(--mono);font-size:11px;color:var(--gray);letter-spacing:.12em}
+  .spk-num{font-family:var(--label);font-size:11px;color:var(--gray);letter-spacing:.12em}
   .spk-sil{height:150px;margin:18px 0;border-radius:3px;background:
       linear-gradient(160deg,#1c1c1f 0%,#101012 70%),
       repeating-linear-gradient(45deg,transparent 0 10px,rgba(235,0,40,.05) 10px 11px);
@@ -130,7 +130,7 @@
   .spk-sil svg{opacity:.55}
   .spk-card h3{font-family:var(--body);font-weight:700;font-size:19px;letter-spacing:0}
   .spk-role{color:var(--gray);font-size:13.5px;margin-top:5px}
-  .spk-tag{position:absolute;top:18px;right:-34px;background:var(--red);color:#fff;font-family:var(--mono);font-size:10px;letter-spacing:.1em;padding:5px 40px;transform:rotate(38deg)}
+  .spk-tag{position:absolute;top:18px;right:-34px;background:var(--red);color:#fff;font-family:var(--label);font-size:10px;letter-spacing:.1em;padding:5px 40px;transform:rotate(38deg)}
   .spk-open{border-style:dashed;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:12px;background:transparent}
   .spk-open h3{font-size:21px}
   .spk-open p{color:var(--gray);font-size:14px}
@@ -148,13 +148,13 @@
   .tik-grid{display:grid;grid-template-columns:minmax(0,60fr) minmax(0,40fr);gap:20px;align-items:stretch}
   .tik-main{background:var(--ink);color:var(--white);border-radius:4px;padding:40px 38px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;min-height:420px}
   .tik-main::after{content:"7.0";position:absolute;right:-14px;bottom:-42px;font-family:var(--disp);font-size:190px;color:transparent;-webkit-text-stroke:1px #2c2c30;line-height:1}
-  .tik-label{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;color:var(--red);text-transform:uppercase}
+  .tik-label{font-family:var(--label);font-size:11.5px;letter-spacing:.14em;color:var(--red);text-transform:uppercase}
   .tik-main h3{font-size:40px;text-transform:uppercase;margin-top:12px}
   .tik-price{font-family:var(--disp);font-size:58px;margin-top:22px}
-  .tik-price small{font-family:var(--mono);font-size:12px;color:var(--gray);display:block;margin-top:4px;letter-spacing:.08em}
+  .tik-price small{font-family:var(--label);font-size:12px;color:var(--gray);display:block;margin-top:4px;letter-spacing:.08em}
   .tik-feats{margin:26px 0 30px;padding:0;list-style:none;font-size:14.5px;color:#d8d8d5}
   .tik-feats li{padding:9px 0;border-bottom:1px solid #222226;display:flex;gap:10px;align-items:baseline}
-  .tik-feats li::before{content:"×";color:var(--red);font-weight:700;font-family:var(--mono)}
+  .tik-feats li::before{content:"×";color:var(--red);font-weight:700;font-family:var(--label)}
   .tik-side{display:flex;flex-direction:column;gap:20px}
   .tik-card{background:#fff;border:1px solid #dddad4;border-radius:4px;padding:28px;flex:1;transition:border-color .2s ease, box-shadow .2s ease}
   .tik-card:hover{border-color:var(--ink);box-shadow:4px 4px 0 var(--ink)}
@@ -172,7 +172,8 @@
   .foot-grid p{color:var(--gray);font-size:13px;max-width:44ch}
   .foot-links{display:flex;gap:22px;font-size:13.5px;color:var(--gray)}
   .foot-links a:hover{color:var(--red)}
-  .foot-note{margin-top:36px;font-family:var(--mono);font-size:11px;color:#55555a}
+  .foot-note{margin-top:36px;font-family:var(--label);font-size:11px;color:#55555a}
+  .eyebrow,.clip-chip,.clip-meta .from,.clip-quote small,.theme-hint,.spk-num,.spk-tag,.tik-label,.tik-price small,.foot-note{font-weight:600}
 </style>
 </head>
 <body>
@@ -347,7 +348,7 @@
         </div>
         <div class="tik-card">
           <h4>Group of 4+</h4>
-          <p class="p">₹449<span style="font-family:var(--mono);font-size:12px;color:#6b6b68"> /seat</span></p>
+          <p class="p">₹449<span style="font-family:var(--label);font-size:12px;color:#6b6b68"> /seat</span></p>
           <p class="d">Bring your study group. One invoice, four or more seats, guaranteed together.</p>
           <a class="btn dark" href="#" onclick="alert('Group bookings: mail tedx@mdi.ac.in');return false;">Book as a group</a>
         </div>
