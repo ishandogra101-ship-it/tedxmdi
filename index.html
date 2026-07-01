@@ -39,19 +39,24 @@
 
   /* ---------- NAV ---------- */
   nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(11,11,12,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
-  .logo{font-family:var(--body);font-weight:700;font-size:19px;letter-spacing:-.01em}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+  .logo{font-family:var(--body);font-weight:700;font-size:19px;letter-spacing:-.01em;white-space:nowrap}
   .logo .ted{color:var(--red)}
   .logo sup{font-size:11px;color:var(--red)}
   .nav-links{display:flex;gap:28px;align-items:center;font-size:14px;font-weight:500}
   .nav-links a{color:var(--gray);transition:color .2s ease}
   .nav-links a:hover{color:var(--white)}
-  .btn{display:inline-block;background:var(--red);color:#fff;font-weight:700;font-size:15px;padding:13px 26px;border:none;border-radius:2px;cursor:pointer;box-shadow:0 6px 20px rgba(235,0,40,.35);transition:background .2s ease, transform .15s ease}
+  .btn{display:inline-block;background:var(--red);color:#fff;font-weight:700;font-size:15px;padding:13px 26px;border:none;border-radius:2px;cursor:pointer;white-space:nowrap;box-shadow:0 6px 20px rgba(235,0,40,.35);transition:background .2s ease, transform .15s ease}
   .btn:hover{background:var(--red-deep)}
   .btn:active{transform:scale(.97)}
   .btn.ghost{background:transparent;border:1px solid var(--line);color:var(--white);box-shadow:none}
   .btn.ghost:hover{border-color:var(--red);color:var(--red);background:transparent}
-  @media(max-width:760px){.nav-links a:not(.btn){display:none}}
+  .nav-links .btn{padding:10px 20px;font-size:14px;box-shadow:none;flex-shrink:0}
+  @media(max-width:760px){
+    .nav-links a:not(.btn){display:none}
+    .logo{font-size:16px}
+    .logo sup{font-size:10px}
+  }
 
   /* ---------- HERO ---------- */
   .hero{padding:150px 0 90px;position:relative}
@@ -202,7 +207,7 @@
         <a class="btn ghost" href="#theme">See the theme</a>
       </div>
       <div class="meta-row">
-        <div><span>Edition</span>7.0 — 2026</div>
+        <div><span>Edition</span>7.0 · 2026</div>
         <div><span>Talks</span>8 speakers</div>
         <div><span>Seats</span>Only 400</div>
       </div>
@@ -225,9 +230,9 @@
       </div>
       <div class="clip-meta">
         <p class="speaker">Dr. Dheeraj Dogra</p>
-        <p class="from">TEDx6.0 — METANOIA · TEDxMDIGurgaon</p>
+        <p class="from">TEDx6.0 · METANOIA · TEDxMDIGurgaon</p>
         <blockquote class="clip-quote">
-          “[Paste the exact quote from your chosen 5–10s clip here.]”
+          “[Paste the exact quote from your chosen clip here.]”
           <small>FROM THE TALK · WATCH THE FULL TALK ON YOUTUBE</small>
         </blockquote>
       </div>
@@ -260,7 +265,7 @@
       <div class="lens" id="lens"></div>
     </div>
     <p class="theme-hint" id="themeHint">MOVE THE LENS · CLICK TO REVEAL</p>
-    <p class="theme-line">From the Greek — <em>the opportune moment</em>. Not clock time. The split second where everything can change, if you act. Eight speakers on the moments that made them.</p>
+    <p class="theme-line">Kairos is Greek for <em>the opportune moment</em>. Not clock time. The split second where everything changes, if you move. Eight speakers on the moments that made them.</p>
   </div>
 </section>
 
@@ -269,47 +274,47 @@
   <div class="wrap">
     <div class="sec-head">
       <h2>The line-up<br>drops in parts</h2>
-      <p>Eight voices. We reveal one every few days on Instagram. Here is who has been confirmed so far — and who is still under wraps.</p>
+      <p>Eight voices. We reveal one every few days on Instagram. Five are teased below. Three stay sealed.</p>
     </div>
     <div class="spk-grid">
       <article class="spk-card">
         <span class="spk-num">SPEAKER 01 / 08</span>
         <div class="spk-sil"><svg width="64" height="64" viewBox="0 0 24 24" fill="#3a3a40"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-4 0-8 2-8 5v2h16v-2c0-3-4-5-8-5z"/></svg></div>
         <h3>The Summiteer</h3>
-        <p class="spk-role">Mountains at an age most people call it a day. Reveal: 18 July.</p>
+        <p class="spk-role">Climbs mountains at an age when most people stop climbing stairs. Name drops 18 July.</p>
         <span class="spk-tag">SOON</span>
       </article>
       <article class="spk-card">
         <span class="spk-num">SPEAKER 02 / 08</span>
         <div class="spk-sil"><svg width="64" height="64" viewBox="0 0 24 24" fill="#3a3a40"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-4 0-8 2-8 5v2h16v-2c0-3-4-5-8-5z"/></svg></div>
         <h3>The Whistleblower</h3>
-        <p class="spk-role">Walked away from a career to say one true thing. Reveal: 22 July.</p>
+        <p class="spk-role">Walked away from a career to say one true thing out loud. 22 July.</p>
         <span class="spk-tag">SOON</span>
       </article>
       <article class="spk-card">
         <span class="spk-num">SPEAKER 03 / 08</span>
         <div class="spk-sil"><svg width="64" height="64" viewBox="0 0 24 24" fill="#3a3a40"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-4 0-8 2-8 5v2h16v-2c0-3-4-5-8-5z"/></svg></div>
         <h3>The Cartographer</h3>
-        <p class="spk-role">Maps cities the census forgot. Reveal: 26 July.</p>
+        <p class="spk-role">Maps the parts of cities the census never counts. 26 July.</p>
         <span class="spk-tag">SOON</span>
       </article>
       <article class="spk-card">
         <span class="spk-num">SPEAKER 04 / 08</span>
         <div class="spk-sil"><svg width="64" height="64" viewBox="0 0 24 24" fill="#3a3a40"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-4 0-8 2-8 5v2h16v-2c0-3-4-5-8-5z"/></svg></div>
         <h3>The Second Act</h3>
-        <p class="spk-role">Built it once. Lost it. Building again, differently. Reveal: 30 July.</p>
+        <p class="spk-role">Built a company. Lost it. Building again, slower and smarter. 30 July.</p>
         <span class="spk-tag">SOON</span>
       </article>
       <article class="spk-card">
         <span class="spk-num">SPEAKER 05 / 08</span>
         <div class="spk-sil"><svg width="64" height="64" viewBox="0 0 24 24" fill="#3a3a40"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-4 0-8 2-8 5v2h16v-2c0-3-4-5-8-5z"/></svg></div>
         <h3>The Conductor</h3>
-        <p class="spk-role">Runs a 90-piece orchestra with no sheet music. Reveal: 3 Aug.</p>
+        <p class="spk-role">Runs a 90-piece orchestra without sheet music. 3 August.</p>
         <span class="spk-tag">SOON</span>
       </article>
       <article class="spk-card spk-open">
-        <h3>Speakers 06–08</h3>
-        <p>Still sealed. Follow <b>@tedxmdigurgaon</b> — reveals land there first, every time.</p>
+        <h3>Speakers 06 to 08</h3>
+        <p>Still sealed. The reveals hit <b>@tedxmdigurgaon</b> first, every time.</p>
         <a class="btn ghost" href="https://www.instagram.com/tedxmdigurgaon/" target="_blank" rel="noopener">Follow the reveals</a>
       </article>
     </div>
@@ -333,11 +338,11 @@
           <ul class="tik-feats">
             <li>Every talk, live, plus speaker Q&amp;A</li>
             <li>Lunch and two coffee breaks</li>
-            <li>Delegate kit — the good kind, not a folder of flyers</li>
+            <li>A delegate kit you will actually keep, not a folder of flyers</li>
             <li>Access to the post-event speaker mixer</li>
           </ul>
         </div>
-        <div><a class="btn" href="#" onclick="alert('Booking opens 10 July, 12 PM — link goes live here.');return false;">Book early bird — ₹499</a></div>
+        <div><a class="btn" href="#" onclick="alert('Booking opens 10 July, 12 PM. The link goes live right here.');return false;">Book early bird at ₹499</a></div>
       </div>
       <div class="tik-side">
         <div class="tik-card">
@@ -350,7 +355,7 @@
           <h4>Group of 4+</h4>
           <p class="p">₹449<span style="font-family:var(--label);font-size:12px;color:#6b6b68"> /seat</span></p>
           <p class="d">Bring your study group. One invoice, four or more seats, guaranteed together.</p>
-          <a class="btn dark" href="#" onclick="alert('Group bookings: mail tedx@mdi.ac.in');return false;">Book as a group</a>
+          <a class="btn dark" href="#" onclick="alert('Group bookings run on email. Write to tedx@mdi.ac.in');return false;">Book as a group</a>
         </div>
       </div>
     </div>
@@ -388,7 +393,7 @@
     const frame = document.getElementById("clipFrame");
     const iframe = document.createElement("iframe");
     iframe.src = `https://www.youtube.com/embed/${CLIP_ID}?start=${CLIP_START}&end=${CLIP_END}&autoplay=1&rel=0&modestbranding=1`;
-    iframe.title = "Featured clip — TEDx6.0 Metanoia";
+    iframe.title = "Featured clip from TEDx6.0 Metanoia";
     iframe.allow = "autoplay; encrypted-media; picture-in-picture";
     iframe.allowFullscreen = true;
     frame.innerHTML = "";
