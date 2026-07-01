@@ -222,7 +222,7 @@
           2. Replace the quote text in .clip-quote with the exact line spoken in that window.
         -->
         <button class="clip-poster" id="clipPoster" aria-label="Play featured clip from TEDx6.0 Metanoia">
-          <span class="clip-chip">▶ FEATURED CLIP <i>· 00:08</i></span>
+          <span class="clip-chip">▶ FEATURED CLIP <i>· 00:10</i></span>
           <span class="play-ring">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg>
           </span>
@@ -385,8 +385,8 @@
   /* ---- Featured clip: click-to-play a 5–10s window from the Metanoia talk ----
      EDIT HERE: change CLIP_START / CLIP_END to your chosen timestamps (seconds). */
   const CLIP_ID = "vDZmVg7MtcY";
-  const CLIP_START = 95;   // <-- your clip start (s)
-  const CLIP_END   = 103;  // <-- your clip end (s)
+  const CLIP_START = 848;  // 14:08, where the quote lands
+  const CLIP_END   = 858;
 
   const poster = document.getElementById("clipPoster");
   poster.addEventListener("click", () => {
