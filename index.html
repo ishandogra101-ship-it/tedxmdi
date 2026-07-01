@@ -46,10 +46,10 @@
   .nav-links{display:flex;gap:28px;align-items:center;font-size:14px;font-weight:500}
   .nav-links a{color:var(--gray);transition:color .2s ease}
   .nav-links a:hover{color:var(--white)}
-  .btn{display:inline-block;background:var(--red);color:#fff;font-weight:600;font-size:14px;padding:11px 22px;border:none;border-radius:2px;cursor:pointer;transition:background .2s ease, transform .15s ease}
+  .btn{display:inline-block;background:var(--red);color:#fff;font-weight:700;font-size:15px;padding:13px 26px;border:none;border-radius:2px;cursor:pointer;box-shadow:0 6px 20px rgba(235,0,40,.35);transition:background .2s ease, transform .15s ease}
   .btn:hover{background:var(--red-deep)}
   .btn:active{transform:scale(.97)}
-  .btn.ghost{background:transparent;border:1px solid var(--line);color:var(--white)}
+  .btn.ghost{background:transparent;border:1px solid var(--line);color:var(--white);box-shadow:none}
   .btn.ghost:hover{border-color:var(--red);color:var(--red);background:transparent}
   @media(max-width:760px){.nav-links a:not(.btn){display:none}}
 
@@ -57,14 +57,14 @@
   .hero{padding:150px 0 90px;position:relative}
   .hero::before{content:"X";position:absolute;right:-6%;top:6%;font-family:var(--disp);font-size:min(58vw,620px);line-height:1;color:transparent;-webkit-text-stroke:1px var(--line);pointer-events:none;user-select:none}
   .hero-grid{display:grid;grid-template-columns:minmax(0,55fr) minmax(0,45fr);gap:56px;align-items:end;position:relative}
-  .hero h1{font-size:clamp(64px,9.5vw,132px);line-height:.94;text-transform:uppercase}
+  .hero h1{font-size:clamp(76px,12vw,168px);line-height:.94;text-transform:uppercase}
   .hero h1 .seven{color:var(--red)}
   .hero-sub{margin-top:26px;max-width:44ch;color:var(--gray);font-size:17px}
   .hero-sub strong{color:var(--white)}
   .hero-ctas{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
-  .meta-row{display:flex;gap:26px;margin-top:44px;flex-wrap:wrap}
-  .meta-row div{font-family:var(--mono);font-size:12.5px}
-  .meta-row span{display:block;color:var(--gray);font-size:11px;margin-bottom:3px;letter-spacing:.1em}
+  .meta-row{display:flex;gap:36px;margin-top:44px;flex-wrap:wrap}
+  .meta-row div{font-family:var(--body);font-size:16px;font-weight:600}
+  .meta-row span{display:block;color:var(--gray);font-size:12.5px;font-weight:400;margin-bottom:4px}
 
   /* featured clip card */
   .clip-card{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:14px;transform:rotate(1.2deg);transition:transform .25s ease, border-color .25s ease;position:relative;z-index:2}
@@ -194,16 +194,16 @@
   <div class="wrap hero-grid">
     <div>
       <p class="eyebrow"><b>●</b> MDI Gurgaon · 30 August 2026 · Auditorium 1</p>
-      <h1>TEDx<br>Seven<span class="seven">.</span>Point<span class="seven">.O</span></h1>
+      <h1>TEDx<br>7<span class="seven">.</span>0</h1>
       <p class="hero-sub">One stage. Twelve minutes per idea. Last year, <strong>Metanoia</strong> asked us to change the lens. This year we point it somewhere new.</p>
       <div class="hero-ctas">
         <a class="btn" href="#tickets">Book a seat</a>
         <a class="btn ghost" href="#theme">See the theme</a>
       </div>
       <div class="meta-row">
-        <div><span>EDITION</span>07 / MMXXVI</div>
-        <div><span>TALKS</span>08 speakers</div>
-        <div><span>SEATS</span>Limited · 400</div>
+        <div><span>Edition</span>7.0 — 2026</div>
+        <div><span>Talks</span>8 speakers</div>
+        <div><span>Seats</span>Only 400</div>
       </div>
     </div>
 
@@ -239,11 +239,11 @@
   <div class="marquee-track">
     <span>Ideas worth spreading</span><b>×</b>
     <span>TEDxMDIGurgaon</span><b>×</b>
-    <span>Edition Seven</span><b>×</b>
+    <span>Edition 7.0</span><b>×</b>
     <span>30 Aug 2026</span><b>×</b>
     <span>Ideas worth spreading</span><b>×</b>
     <span>TEDxMDIGurgaon</span><b>×</b>
-    <span>Edition Seven</span><b>×</b>
+    <span>Edition 7.0</span><b>×</b>
     <span>30 Aug 2026</span><b>×</b>
   </div>
 </div>
